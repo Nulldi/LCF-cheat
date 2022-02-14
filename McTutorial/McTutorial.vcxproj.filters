@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\dllmain.cpp" />
+    <ClCompile Include="sdk\sdk.cpp" />
+    <ClCompile Include="src\srg\automapper.cpp" />
+    <ClCompile Include="src\utils.cpp" />
+    <ClCompile Include="zip\zip.cpp" />
+    <ClCompile Include="src\srg\mappings.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="jni">
+      <UniqueIdentifier>{c4e9b207-b216-461b-b58e-097ee386c6e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jni\win32">
+      <UniqueIdentifier>{b10de6a6-88d8-401e-848b-0400fb82c86c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{6a483f1c-2df6-47f4-90e2-438fbdab6965}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="jni\win32\jawt_md.h">
+      <Filter>jni\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="jni\win32\jni_md.h">
+      <Filter>jni\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\sdk.h" />
+    <ClInclude Include="src\srg\automapper.h" />
+    <ClInclude Include="src\utils.h" />
+    <ClInclude Include="zip\miniz.h" />
+    <ClInclude Include="zip\zip.h" />
+    <ClInclude Include="src\srg\mappings.h" />
+  </ItemGroup>
+</Project>
